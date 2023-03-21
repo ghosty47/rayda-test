@@ -2,6 +2,8 @@ import React from 'react'
 import useStyles from './Banner.styles';
 import { ReactComponent as BannerImage } from '../../resources/images/banner.svg';
 import Logo from '../../resources/images/logo.svg';
+import { Typography } from '@material-ui/core';
+import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 
 
 const Banner = () => {
@@ -22,8 +24,23 @@ const Banner = () => {
               className={classes.logoClass}
             />
             <div className={classes.timer} >
-
+              <span className={classes.time} >
+                  Starts in: 3 days : 2 hours : 24 minutes
+              </span>
+              <div className={classes.liveWrapper} >
+                <div className={classes.mainDot} >
+                  <div className={classes.dot} />
+                  <span className={classes.notLive} >Not Live</span>
+                </div>
+                <span className={classes.layersAuction} >
+                  Layers Auction
+                </span>
+              </div>
             </div>
+          </div>
+          <div className={classes.invitation} >
+            <ThumbUpAltOutlinedIcon/>
+            <span className={classes.acceptInt} >Accept Invitation</span>
           </div>
         </div>
       </div>

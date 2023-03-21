@@ -9,8 +9,14 @@ const useStyles = makeStyles({
     paddingTop: "2em",
     paddingBottom: "1em",
   },
-  mainContainer: {
-    border: "1px solid red",
+  welcomeHeader: {
+    fontSize: "22px",
+    fontWeight: 700,
+  },
+  subHeader: {
+    color: "grey",
+    fontSize: "12px",
+    fontWeight: 300,
   },
   notify: {
     width: "20px",
