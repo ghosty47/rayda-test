@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     marginTop: "20px",
     // height: "260px",
     boxShadow: "rgba(0, 0, 0, 0.05) 0px 1px 4px",
+    marginBottom: "15px",
   },
   featuredHeader: {
     display: "flex",
@@ -17,13 +18,16 @@ const useStyles = makeStyles({
   invitation: {
     border: "1px solid #EAECF0",
     borderRadius: "10px",
-    // padding: "3px 8px 3px 8px",
-    marginRight: "40px",
-    gap: ".7em",
+    padding: "5px 12px 5px 12px",
+    "&: hover": {
+      backgroundColor: "#004CCC !important",
+      color: "#ffffff !important",
+    },
   },
   acceptInt: {
-    fontSize: "10px",
+    fontSize: "11px",
     fontWeight: "700",
+    cursor: "pointer",
   },
   items: {
     fontSize: "16px",
@@ -37,10 +41,12 @@ const useStyles = makeStyles({
   },
   root: {
     flexGrow: 1,
+    marginTop: "10px",
   },
-  paper: {
-    height: 140,
-    width: 100,
+  mainProduct: {
+    "& :hover": {
+      transform: "scale(1.01) perspective(0px)",
+    },
   },
 });
 

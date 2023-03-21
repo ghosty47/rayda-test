@@ -84,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "3px 8px 3px 8px",
     marginRight: "40px",
     gap: ".7em",
+    cursor: "pointer"
   },
   acceptInt: {
     fontSize: "10px",

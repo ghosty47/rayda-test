@@ -17,10 +17,10 @@ const FeaturedProducts = () => {
           </div>
         </div>
         <hr />
-      <Grid container className={classes.root} spacing={3}>
+      <Grid container className={classes.root} spacing={2}>
         <Grid item xs={12}>
-          <Grid container spacing={2}>
-            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
+          <Grid container className={classes.mainProduct} spacing={2}>
+            {[0, 1, 2, 3, 4, 5, 6, 7].map((value) => (
               <Grid key={value} item>
                 <Product />
               </Grid>

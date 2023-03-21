@@ -5,11 +5,12 @@ const useStyles = makeStyles({
     border: "1px solid #EAECF0",
     borderRadius: "10px",
     padding: "8px",
+    transition: "transform .5s, box-shadow 1s",
   },
   imgContainer: {
     backgroundColor: "#F2F4F7",
     borderRadius: "10px",
-    width: "250px",
+    width: "262px",
     height: "120px",
     display: "flex",
     justifyContent: "center",
@@ -62,6 +63,10 @@ const useStyles = makeStyles({
     backgroundColor: "#004CCC !important",
     borderRadius: "8px !important",
     textTransform: "none !important",
+    height: "40px !important",
+    "&: hover": {
+      backgroundColor: "#8d0ed9 !important",
+    }
   },
   nairaBid: {
     fontSize: "14px",
@@ -77,13 +82,6 @@ const useStyles = makeStyles({
     color: "lightgrey",
     fontWeight: 100,
     fontSize: "12px",
-  },
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    height: 140,
-    width: 100,
   },
 });
 
