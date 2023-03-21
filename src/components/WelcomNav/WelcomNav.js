@@ -34,7 +34,7 @@ const WelcomNav = () => {
           </IconButton>
         </div>
       </div>
-      <Divider className={classes.divider}/>
+      <Divider />
     </>
   );
 };

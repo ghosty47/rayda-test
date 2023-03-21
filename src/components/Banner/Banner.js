@@ -2,7 +2,6 @@ import React from 'react'
 import useStyles from './Banner.styles';
 import { ReactComponent as BannerImage } from '../../resources/images/banner.svg';
 import Logo from '../../resources/images/logo.svg';
-import { Typography } from '@material-ui/core';
 import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 
 

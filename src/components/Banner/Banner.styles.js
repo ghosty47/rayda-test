@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   bannerWrapper: {
     border: "1px solid #EAECF0",
     borderRadius: "10px",
@@ -53,7 +53,8 @@ const useStyles = makeStyles({
     height: "8px",
     width: "8px",
     backgroundColor: "#F79009",
-    borderRadius: "50%"
+    borderRadius: "50%",
+    // animation: "3s infinite",
   },
   notLive: {
     paddingTop: "2px",
@@ -81,13 +82,13 @@ const useStyles = makeStyles({
     border: "1px solid #EAECF0",
     borderRadius: "10px",
     padding: "3px 8px 3px 8px",
-    marginRight: "10px",
+    marginRight: "40px",
     gap: ".7em",
   },
   acceptInt: {
     fontSize: "10px",
     fontWeight: "700",
   },
-});
+}));
 
 export default useStyles;
