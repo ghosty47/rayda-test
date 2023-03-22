@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Getting Started with Rayda-test
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
+Clone the project into your local machine
+
 In the project directory, you can run:
+
+### `npm install`
+
+then:
 
 ### `npm start`
 
