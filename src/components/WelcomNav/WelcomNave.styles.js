@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   welcomNavBar: {
-    // border: "1px solid green",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",

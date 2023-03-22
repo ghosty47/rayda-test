@@ -5,7 +5,6 @@ const useStyles = makeStyles({
     border: "1px solid #EAECF0",
     borderRadius: "10px",
     marginTop: "20px",
-    // height: "260px",
     boxShadow: "rgba(0, 0, 0, 0.05) 0px 1px 4px",
     marginBottom: "15px",
   },

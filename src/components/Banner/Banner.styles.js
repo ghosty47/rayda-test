@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "28px",
   },
   mainDot: {
-    // width: "80px",
     backgroundColor: "#FFFAEB",
     padding: "3px 8px 3px 8px",
     borderRadius: "20px",
@@ -46,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    // justifyContent: "center",
     gap: ".7em",
   },
   dot: {
@@ -54,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
     width: "8px",
     backgroundColor: "#F79009",
     borderRadius: "50%",
-    // animation: "3s infinite",
   },
   notLive: {
     paddingTop: "2px",
