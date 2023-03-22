@@ -1,7 +1,7 @@
 import React from "react";
 import useStyles from "./Product.styles";
-import LaptopImage from "../../resources/images/laptop.png";
 import { Button, Divider, Typography } from "@material-ui/core";
+import getInitials from "../../utils";
 
 const Product = ({ data }) => {
 
@@ -14,7 +14,7 @@ const Product = ({ data }) => {
         <img src={data?.image} alt="electronics" className={classes.img} />
       </div>
       <div className={classes.auctionTitle}>
-        <div className={classes.initials}>KO</div>
+        <div className={classes.initials}> { getInitials(data) } </div>
         <p className={classes.topHeader}>
           { data?.name }  <span className={classes.bidder}>(Highest Bidder)</span>
         </p>

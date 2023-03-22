@@ -1,5 +1,5 @@
 import { Grid, Typography } from '@material-ui/core';
-import React, { useState } from 'react'
+import React from 'react'
 import Product from '../Product';
 import useStyles from './FeaturedProducts.styles';
 import { useGetAllProductsQuery } from '../../features/apiSlice';
@@ -8,10 +8,6 @@ import Loader from '../Loader';
 const FeaturedProducts = () => {
 
   const { data, isLoading } = useGetAllProductsQuery();
-
-  const [products, setProduct] = useState([data])
-
-  console.log(data);
 
   const classes = useStyles();
 
@@ -30,9 +26,9 @@ const FeaturedProducts = () => {
       <Grid container className={classes.root} spacing={2}>
         <Grid item xs={12}>
           <Grid container className={classes.mainProduct} spacing={2}>
-            {products?.map((product, index) => (
+            {data?.data?.map((product, index) => (
               <Grid item>
-                <Product product={product} key={index} />
+                <Product data={product} key={index} />
               </Grid>
             ))}
           </Grid>
